@@ -2,29 +2,21 @@
 <html>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+      <a-assets>
+        <img id="red" src="Red.jpg">
 
-      <body style="margin: -606.5px 0px 0px; overflow: hidden; width: 2560px; height: 1920px;" class="">
+      <a-asset-item id='target' src='Vodafone-pattern-marker.patt'></a-asset-item>
+      </a-assets>
 
-        
-        <a-scene embedded="" arjs="trackingMethod: best;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
-  
-            <!-- Create a anchor to attach your augmented reality -->
-            <a-anchor hit-testing-enabled="true" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
-        
-              <!-- Add your augmented reality here -->
-              <a-box position="0 0.5 0" material="opacity: 0.5; side:double; color:red;" rotation="" scale="" visible="" geometry="">
-                <a-torus-knot radius="0.26" radius-tubular="0.05" position="" rotation="" scale="" visible="" material="" geometry="">
-                  <a-animation attribute="rotation" to="360 0 0" dur="5000" easing="linear" repeat="indefinite"></a-animation>
-                </a-torus-knot>
-              </a-box>
-        
-            </a-anchor>
-        
-            <!-- Define a static camera -->
 
-<a-camera-static position="" rotation="" scale="" visible="" material="" camera="">
+      <a-marker type="pattern" patternUrl='target'>
+              <!-- can change a-box to another asset that I want to display eg and image using a-image <a-image src="#my-image"></a-image> for example -->
+                <a-box position='0 0.5 0' material='color: black;'></a-box>
+      </a-marker>
         
-          </a-camera-static><canvas class="a-canvas" data-aframe-canvas="true" width="2560" height="1920" style="width: 2560px; height: 1920px;"></canvas><div class="a-enter-vr embedded" aframe-injected="" style="position: fixed;"><button class="a-enter-vr-button" aframe-injected=""></button></div><div class="a-orientation-modal a-hidden" aframe-injected=""><button aframe-injected="">Exit VR</button></div><a-entity light="" data-aframe-default-light="" aframe-injected="" position="" rotation="" scale="" visible=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected="" rotation="" scale="" visible=""></a-entity></a-scene> -->
-  </body>
+            <a-entity camera></a-entity>
+            </a-scene>
+          </body>
 </html>
-  
