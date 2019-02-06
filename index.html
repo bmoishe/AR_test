@@ -1,56 +1,11 @@
-<!-- <!doctype HTML>
-<html>
-<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
-
-  <body style='margin : 0px; overflow: hidden;'>
-      <a-scene embedded arjs>
-
-          <a-assets>
-            <a-asset-item id="green" src="Green.jpg"></a-asset-item>
-            <a-asset-item id="red" src="Red.jpg"></a-asset-item>
-            <a-asset-item id="blue" src="Blue.jpg"></a-asset-item>
-          </a-assets>
-        
-        
-            <a-marker-camera preset='hiro'>
-        
-              <a-entity gltf-model-next="#green"></a-entity>
-        
-        
-            </a-marker-camera>
-        
-        
-        </a-scene>
-  </body>
-</html> -->
-
 <!doctype HTML>
 <html>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 
-  <!-- <body style='margin : 0px; overflow: hidden;'> -->
       <body style="margin: -606.5px 0px 0px; overflow: hidden; width: 2560px; height: 1920px;" class="">
-      <!-- <a-scene embedded arjs>
 
-          <a-assets>
-            <a-asset-item id="green" src="Green.jpg"></a-asset-item>
-            <a-asset-item id="red" src="Red.jpg"></a-asset-item>
-            <a-asset-item id="blue" src="Blue.jpg"></a-asset-item>
-          </a-assets>
         
-        
-            <a-marker-camera preset='hiro'>
-        
-              <a-entity gltf-model-next="#green"></a-entity>
-        
-        
-            </a-marker-camera>
-        
-        
-        </a-scene> -->
-
         <a-scene embedded="" arjs="trackingMethod: best;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
   
             <!-- Create a anchor to attach your augmented reality -->
@@ -66,9 +21,11 @@
             </a-anchor>
         
             <!-- Define a static camera -->
-            <a-camera-static position="" rotation="" scale="" visible="" material="" camera="">
+           <a-marker-camera type="pattern" patternUrl='Vodafone-pattern-marker.patt'>
+             	</a-marker-camera>
+<!--             <a-camera-static position="" rotation="" scale="" visible="" material="" camera="">
         
-          </a-camera-static><canvas class="a-canvas" data-aframe-canvas="true" width="2560" height="1920" style="width: 2560px; height: 1920px;"></canvas><div class="a-enter-vr embedded" aframe-injected="" style="position: fixed;"><button class="a-enter-vr-button" aframe-injected=""></button></div><div class="a-orientation-modal a-hidden" aframe-injected=""><button aframe-injected="">Exit VR</button></div><a-entity light="" data-aframe-default-light="" aframe-injected="" position="" rotation="" scale="" visible=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected="" rotation="" scale="" visible=""></a-entity></a-scene>
+          </a-camera-static><canvas class="a-canvas" data-aframe-canvas="true" width="2560" height="1920" style="width: 2560px; height: 1920px;"></canvas><div class="a-enter-vr embedded" aframe-injected="" style="position: fixed;"><button class="a-enter-vr-button" aframe-injected=""></button></div><div class="a-orientation-modal a-hidden" aframe-injected=""><button aframe-injected="">Exit VR</button></div><a-entity light="" data-aframe-default-light="" aframe-injected="" position="" rotation="" scale="" visible=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected="" rotation="" scale="" visible=""></a-entity></a-scene> -->
   </body>
 </html>
   
